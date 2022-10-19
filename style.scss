@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+$primary-clr: #f8f7f3;
+$secondary-clr: #1a24fb;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-clr;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: $secondary-clr;
+  color: $primary-clr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 100;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+
+  h1 {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  }
+  .material-icons {
+    font-size: 24px;
+    margin: 30px;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px 20px;
+  max-width: 1280px;
+  margin: 100px auto;
+  padding: 30px;
+
+  .card {
+    padding: 40px;
+    max-width: 270px;
+    height: 370px;
+    border: 1px solid $secondary-clr;
+    position: relative;
+    padding: 30px;
+    color: $secondary-clr;
+
+    div {
+      font-size: 24px;
+      font-size: 24px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 40px;
+      height: 40px;
+      background-color: $primary-clr;
+      color: $secondary-clr;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+    }
+
+    h4 {
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 20px;
+      }
+
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: 'Overpass', sans-serif;
+      margin-top: 40px;
+    }
+
+    button {
+        width: 100%;
+        height: 18px;
+        font-size: 14px;
+        position: absolute;
+        bottom: -30px;
+        left: 0px;
+        color: $secondary-clr;
+        background-color: $primary-clr;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+
+    
+        span {
+          font-size: 18px;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:hover{
+            background-color: $secondary-clr;
+            color: $primary-clr;
+        }
+      }
+  }
+
+}
